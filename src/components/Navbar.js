@@ -1,9 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
+import Cart from "./Cart";
 
-function NavbarHeader() {
-  
+const NavbarHeader= (props)=> {
   return (
     <Navbar bg="dark" expand= 'sm' fixed="top" variant="dark" >
       <Container style={{justifyContent: 'space-evenly', fontFamily : 'Courier New, monospace' , fontWeight: 'bold' }}>
@@ -11,7 +10,7 @@ function NavbarHeader() {
         <Navbar.Brand href="/">STORE</Navbar.Brand>
         <Navbar.Brand href="/">ABOUT</Navbar.Brand>
       </Container>
-      <Button variant="outline-info" style={{marginRight: '15px' , fontWeight: 'bold'}}>Cart: {0}</Button>
+      <Cart/>
     </Navbar>
   );
 }

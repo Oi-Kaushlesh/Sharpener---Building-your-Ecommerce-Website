@@ -39,7 +39,7 @@ const MainPage = (args) => {
         ))}
       </div>
       <Container fluid className="d-flex align-items-center justify-content-center bg-white text-black p-5">
-        <Button variant="secondary">See the cart</Button>
+        <Button variant="danger">See the cart</Button>
       </Container>
     </>
   );

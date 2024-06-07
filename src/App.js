@@ -4,6 +4,7 @@ import MainPage from "./components/MainPage";
 import NavbarHeader from "./components/Navbar";
 
 function App() {
+  
   return <>
     <NavbarHeader/>
     <MainPage/>
