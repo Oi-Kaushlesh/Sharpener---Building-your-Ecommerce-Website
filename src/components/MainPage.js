@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Card, Button ,Container } from "react-bootstrap";
 import ProductsArr from "./ProductsArr";
+import AuthContext from "./auth-context";
 const MainPage = (args) => {
+  const ctx = useContext(AuthContext);
   return (
     <>
       <h1
@@ -20,7 +22,7 @@ const MainPage = (args) => {
       >
         Music
       </div>
-      <div style={{display: 'flex' , justifyContent: 'space-between' , marginInline: '100px'}}>
+      <div style={{display: 'flex' , flexWrap: 'wrap' , justifyContent: 'space-around' , marginInline: '100px'}}>
         {ProductsArr.map((product, index) => (
           <Card key={index} style={{ width: "18rem"}}>
             <Card.Img
@@ -33,7 +35,7 @@ const MainPage = (args) => {
             <Card.Body>
               <Card.Title>{product.title} </Card.Title>
               <Card.Text>Price: {product.price}Rs</Card.Text>
-              <Button variant="primary">ADD TO CART</Button>
+              <Button variant="primary" onClick={() => (ctx.addToCartHandler(product))}>ADD TO CART</Button>
             </Card.Body>
           </Card>
         ))}
