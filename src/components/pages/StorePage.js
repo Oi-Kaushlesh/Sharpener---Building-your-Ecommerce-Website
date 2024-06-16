@@ -10,7 +10,7 @@ const StorePage = (args) => {
       <div
         style={{ fontSize: "50px", textAlign: "center", fontFamily: "cursive" }}
       >
-        Music
+        MUSIC
       </div>
       <div style={{display: 'flex' , flexWrap: 'wrap' , justifyContent: 'space-around' , marginInline: '100px'}}>
         {ProductsArr.map((product, index) => (
