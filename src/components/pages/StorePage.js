@@ -1,22 +1,12 @@
 import React, { useContext } from "react";
 import { Card, Button ,Container } from "react-bootstrap";
-import ProductsArr from "./ProductsArr";
-import AuthContext from "./auth-context";
-const MainPage = (args) => {
+import ProductsArr from "../ProductsArr";
+import AuthContext from "../auth-context";
+const StorePage = (args) => {
   const ctx = useContext(AuthContext);
   return (
     <>
-      <h1
-        style={{
-          fontSize: "100px",
-          textAlign: "center",
-          backgroundColor: "grey",
-          height: "100%",
-          marginTop: "55px",
-        }}
-      >
-        The Generics
-      </h1>
+      
       <div
         style={{ fontSize: "50px", textAlign: "center", fontFamily: "cursive" }}
       >
@@ -46,4 +36,4 @@ const MainPage = (args) => {
     </>
   );
 };
-export default MainPage;
+export default StorePage;
