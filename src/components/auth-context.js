@@ -7,6 +7,7 @@ const AuthContext = React.createContext({
 });
 
 export const AuthContextProvider = (props) => {
+  
   const [cartElements, setCartElements] = useState([]);
 
   const addToCartHandler = (item) => {
@@ -46,6 +47,7 @@ export const AuthContextProvider = (props) => {
       return prevCartElements;
     });
   };
+  
 
   return (
     <AuthContext.Provider
