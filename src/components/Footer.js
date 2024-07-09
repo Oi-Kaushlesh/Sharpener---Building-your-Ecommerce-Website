@@ -1,5 +1,7 @@
 import React from "react";
-import { Container , Row , Col} from "react-bootstrap";;
+import { Container , Row , Col } from "react-bootstrap";
+import { NavLink } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <footer>
@@ -18,6 +20,7 @@ const Footer = () => {
           </Col>
         </Row>
       </Container>
+        
     </footer>
   );
 };
