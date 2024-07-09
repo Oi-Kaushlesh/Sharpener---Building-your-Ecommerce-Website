@@ -27,6 +27,9 @@ const NavbarHeader = (props) => {
           <NavLink to="/about" className="navbar-brand">
             ABOUT
           </NavLink>
+          <NavLink to="/contact" className="navbar-brand">
+            CONTACT US
+          </NavLink>
         </Container>
         <Cart />
       </Navbar>
