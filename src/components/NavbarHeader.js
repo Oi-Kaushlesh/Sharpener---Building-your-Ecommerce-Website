@@ -18,10 +18,10 @@ const NavbarHeader = (props) => {
             fontWeight: "bold",
           }}
         >
-          <NavLink to="/home" className="navbar-brand">
+          <NavLink to="/" className="navbar-brand">
             HOME
           </NavLink>
-          <NavLink to="/" className="navbar-brand">
+          <NavLink to="/store" className="navbar-brand">
             STORE
           </NavLink>
           <NavLink to="/about" className="navbar-brand">
